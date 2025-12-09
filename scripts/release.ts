@@ -20,7 +20,9 @@ if (!currentTag.trim()) {
 }
 
 // Get previous tag
-const prevTagResult = await $`git describe --tags --abbrev=0 ${currentTag.trim()}^`.nothrow().quiet()
+const prevTagResult = await $`git describe --tags --abbrev=0 ${currentTag.trim()}^`
+  .nothrow()
+  .quiet()
 const prevTag = prevTagResult.exitCode === 0 ? prevTagResult.text() : null
 
 // Get commits - format: "- <subject> (@<author>)"
