@@ -1,15 +1,21 @@
 {
-  "name": "pkg-placeholder",
+  "name": "@echristian/effect-atom-solid",
   "version": "0.0.0",
-  "description": "_description_",
+  "description": "Solid bindings for @effect-atom/atom",
   "keywords": [
-    "pkg-placeholder"
+    "effect",
+    "effect-ts",
+    "atom",
+    "solid",
+    "solid-js",
+    "state-management",
+    "reactive"
   ],
-  "homepage": "https://github.com/ericc-ch/pkg-placeholder",
-  "bugs": "https://github.com/ericc-ch/pkg-placeholder/issues",
+  "homepage": "https://github.com/ericc-ch/effect-atom-solid",
+  "bugs": "https://github.com/ericc-ch/effect-atom-solid/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericc-ch/pkg-placeholder.git"
+    "url": "https://github.com/ericc-ch/effect-atom-solid.git"
   },
   "author": {
     "name": "Erick Christian",
@@ -22,9 +28,6 @@
       "default": "./dist/main.js"
     }
   },
-  "bin": {
-    "pkg-placeholder": "./dist/cli.js"
-  },
   "files": [
     "dist"
   ],
@@ -34,15 +37,15 @@
     "lint": "oxlint",
     "prepack": "bun run build",
     "release": "bumpp && bun publish",
-    "start": "bun run src/cli.ts",
     "typecheck": "tsc"
   },
-  "dependencies": {
-    "yargs": "^18.0.0"
+  "peerDependencies": {
+    "@effect-atom/atom": "^0.4",
+    "effect": "^3",
+    "solid-js": "^1"
   },
   "devDependencies": {
     "@types/bun": "^1.3.4",
-    "@types/yargs": "^17.0.35",
     "bumpp": "^10.3.2",
     "oxfmt": "^0.17.0",
     "oxlint": "^1.32.0",
