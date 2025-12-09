@@ -1,6 +1,6 @@
 {
   "name": "@echristian/effect-atom-solid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Solid bindings for @effect-atom/atom",
   "keywords": [
     "effect",
